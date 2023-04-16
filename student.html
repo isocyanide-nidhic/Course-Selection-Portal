@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <img src="STU.jpg" id="pic"  alt="Student pic">
+    <div class="wrapper">
+        <div class="container">
+            <h2>Enter Student Details :</h2>
+     <span><div>
+             <div class="stu-form">
+        <form action="connectS.php" method="post">
+            <p>
+                <label>Name</label>
+                <input type="text" placeholder="Enter Full Name" required name="S_NAME">
+            </p>
+            <p>
+                <label>Username:<span>*</span></label>
+                <input type="text" placeholder="Put Unique Username" required name="S_USERNAME">
+            </p>
+            <p>
+                <label>Password:<span>*</span></label>
+                <input type="password" placeholder="Password" required id="password" name="S_PASWD">
+            </p>
+            <p>
+                <label>Confirm Password:<span>*</span></label>
+                <input type="password" placeholder="Password" required onblur="validation()">
+            </p>
+            <p>
+                <label>E-mail Address:<span>*</span></label>
+                <input type="email" placeholder="Enter Email-ID" required name="S_EMAIL">
+            </p>
+            <p>
+                <label>Phone Number:<span>*</span></label>
+                <input type="text" placeholder="Enter 10-Digit Ph.No." required name="S_PHONE">
+            </p>
+            <p>
+                <label>Date of Birth:<span>*</span></label>
+                <input type="date" placeholder="Enter DOB" required name="S_DOB">
+            </p>
+            <p>
+                <label>Name of School/College:</label>
+                <input type="text" placeholder="Enter Institution Name" required name="S_COLLEGENAME">
+            </p>
+                        
+                       
+            <p>
+                <input type="submit" value="REGISTER" onclick="switchtologin()" >
+            </p>
+            </form></div></span>
+     </div>
+        </div>
+    </div>
+    <script>
+        function validation() {
+        var password = document.frm.Password.value;
+        var password2 = document.frm.C_Password.value;
+            if (password != password2) {
+                alert("password mismatch");
+            }   
+        }
+        // function switchtologin() {
+        //     alert("Student Registered Sucessfully ! ");
+        //     window.location.href="studentlog.html";
+                   
+        // } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Details</title>
+    <link rel="stylesheet" href="faculty.css">
+</head>
+<body>
+    <img src="faculty.jpg" id="pic"  alt="faculty pic">
+    <div class="wrapper">
+        <div class="container">
+            <h2>Enter Faculty Details :</h2>
+     <span><div>
+             <div class="f-form">
+        <form action="connect.php" method="post">
+            <p>
+                <label>Name:</label>
+                <input type="text" placeholder="Enter Full Name" required name="F_NAME">
+            </p>
+            <p>
+                <label>Username:<span>*</span></label>
+                <input type="text" placeholder="Put Unique Username" required name="F_USERNAME">
+            </p>
+            <p>
+                <label>Password:<span>*</span></label>
+                <input type="password" placeholder="Password" required name="F_PASWD">
+            </p>
+            <p>
+                <label>Confirm Password:<span>*</span></label>
+                <input type="password" placeholder="RETYPE_Password" required>
+            </p>
+            <p>
+                <label>E-mail Address:<span>*</span></label>
+                <input type="email" placeholder="Enter Email-ID" required name="F_EMAIL">
+            </p>
+            <p>
+                <label>Phone Number:<span>*</span></label>
+                <input type="text" placeholder="Enter 10-Digit Ph.No." required name="F_PHONE">
+            </p>
+            <p>
+                <label>Date of Birth:<span>*</span></label>
+                <input type="date" placeholder="Enter DOB" required name="F_DOB">
+            </p>
+            <p>
+                <label>Domain Name: <span>*</span></label>
+                <input type="text" placeholder="Enter Course Domain" required name="F_DOMAIN">
+            </p>
+                        
+            
+            
+            
+            
+            
+            
+            <p>
+                <input type="submit" value="Register">
+            </p>
+            </form></div></span>
+     </div>
+        </div>
+    </div>
+<script>
+    // function switchtologin() {
+    //     alert("Faculty Registered Sucessfully ! ");
+       
+    //     window.location.href="facultylog.html";
+    // }
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+
+box-sizing: border-box;
+}
+body {
+    font-family: poppins;
+  }
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  thead th {
+    width: 25%;
+  }
+  tbody tr:hover {background-color: coral;}
+  thead {
+	background-color: #333;
+	color: white;
+	font-size: 0.875rem;
+	letter-spacing: 2%;
+}
+  caption {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    color: #333;
+  }
+  table{
+    position: 200px;
+  }
+  .LO{
+    background-color: black;
+    color: white;
+}
+.LO h2{
+    padding: 30px;
+    color: white;
+    
+    
+}
+
+.LO input[type=submit]{
+    padding: 30px;
+    display:block;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align:center;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.LO input[type=submit]{
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  cursor:pointer;
+  
+}
+.LO input[type=submit]:hover{ background: yellowgreen;}
+
+.FB input[type="text"] {
+    width: 250px;
+    height: 100px;
+    text-align: justify;
+    
+}
+.FB{
+    position: absolute;
+    display: flex;
+    bottom: 40px;
+    right: 30px;
+}
+.btn input[type=submit]{
+    padding: 10px;
+    display:block;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align:center;
+    position: absolute;
+    bottom: 15px;
+    right: 120px;
+    cursor:pointer;
+}
+
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection Portal</title>
+
+</head>
+<link rel="stylesheet" href="TRcourse.css">
+<body>
+   <div class="LO"><h2>HELLO Faculty !!</h2><span><input type="submit" value="LOG OUT" class="box" onclick="loggedout()" data-toggle="tooltip" data-placement="bottom" title="LOGOUT"></span></div> 
+   
+  
+   <div class="cform">
+   <form action="course.php" method="post" >
+    <label>Course ID: </label>
+    <input type="text" placeholder="Enter Course ID" class="id"  name="CID"><br><br>
+    <label>Course Name: </label>
+    <input type="text" placeholder="Enter Course Name" class="name"required name="CNAME"><br><br>
+    <label>Enter Course Link: </label>
+    <input type="text" placeholder="Paste Link Here" class="link"required name="CLINK"><br><br>
+    <label>Course Duration: </label>
+    <input type="text" placeholder="Enter Duration" class="time"required name="CDURATION"><br><br>
+    <input type="submit" value="SUBMIT">
+   </form>
+</div>
+<div class="hi">
+   <div class="pro">
+    <form action="procedure.php" method="post">
+    <input type="submit" id="pro" value="View Feedback" data-toggle="tooltip" data-placement="bottom" title="View feedback">
+    </form>
+
+</div>
+</div>
+
+
+
+
+
+<script>
+    function loggedout() {
+        alert("Want to Log Out ?? ");
+            window.location.href="index.html";
+    }
+    
+  </script>
+</body>
+</html>

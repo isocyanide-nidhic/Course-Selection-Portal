@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT LOGIN</title>
+    <link rel="stylesheet" href="studentlog.css">
+</head>
+<body>
+    <img src="STU.jpg" id="pic"  alt="Student pic">
+    <div class="W0">
+        <div class="wel"><SPAN><h2>WELCOME STUDENT!</h2></SPAN></div>
+
+        <div class="Stuloginform">
+            
+            <form action="Slogin.php" method="post">
+                <p>
+                    <label>Username<span>*</span></label>
+                    <input type="text" placeholder="Username" required name="S_USERNAME">
+                </p>
+                <p>
+                    <label>Password<span>*</span></label>
+                    <input type="password" placeholder="Password" required name="S_PASWD">
+                </p>
+                <p>
+                    <input type="submit" value="SIGN IN" data-toggle="tooltip" data-placement="bottom" title="SIGN IN">
+                </p>
+                
+
+            </form>
+        </div>
+      <script>
+        function loggedin() {
+            alert("Student Logged In Sucessfully ! ");
+                window.location="STUcourse.php"; 
+        }
+      </script>
+</body>
+</html>
